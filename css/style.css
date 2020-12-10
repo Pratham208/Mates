@@ -9,6 +9,16 @@ body {
     overflow-x: hidden;
     color: white;
     font-family: "Roboto";
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
 }
 
 header {
@@ -32,7 +42,7 @@ header {
 }
 
 .logo {
-    width: 340px;
+    width: 250px;
     float: left;
 }
 
@@ -77,7 +87,7 @@ header {
     top: 20%;
 }
 
-h1 {
+.mates{
     color: #fff;
     font-size: 92px;
     word-spacing: 5px;
@@ -86,7 +96,7 @@ h1 {
     font-weight: bolder;
 }
 
-h4 {
+.matesText {
     font-size: 24px;
     text-align: center;
 }
@@ -133,8 +143,7 @@ h4 {
 }
 
 .AR2 {
-    width: 90%;
-    margin-top: 18px;
+    width: 85%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -156,6 +165,296 @@ h4 {
 .colorchange {
     animation: colorchangethapa 1s infinite;
 }
+
+/* ///////////////////////////- EVENTS CSS -/////////////////////// */
+
+#events{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32 33 37 / 98%);
+}
+
+.eventHeading{
+    display: flex;
+    /* border: hotpink solid 2px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.upcomingHead{
+    margin: auto;
+}
+.upcomingHead span {
+    font-family: "Roboto";
+    font-size: 50px;
+    color: #f38c0ed1;
+    text-shadow: -4px -2px black;
+}
+#upcoming{
+    margin-left: auto;
+    background-color: #f38c0ed1;
+    width: 100px;
+    height: 10px;
+    border: black;
+    border-radius: 8px; 
+    box-shadow: -4px -2px black;
+}
+.updatesHead{
+    margin: auto;   
+}
+.updatesHead span {
+    font-family: "Roboto";
+    font-size: 50px;
+    color: #f38c0ed1;
+    text-shadow: -4px -2px black;
+    letter-spacing: 2px;
+
+}
+
+#updates{
+    margin-left: auto;
+    background-color: #f38c0ed1;
+    width: 80px;
+    height: 10px;
+    border: black;
+    border-radius: 8px; 
+    box-shadow: -4px -2px black;
+}
+.eventUpdates{
+    display: flex;
+    /* border: darkred solid 2px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    height: 80vh;
+}
+
+.upcomingEvents{
+    /* border: black solid 2px; */
+    width: 60%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.upcomingEvents span{
+    font-size: 80px;
+    font-weight: 200;
+    background: linear-gradient(90deg, rgba(194,79,79,1) 0%, rgba(182,128,26,1) 35%, rgba(8,147,176,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    text-shadow: #00000070 -2px -2px;
+    letter-spacing: 2px;
+    
+}
+
+.updatesEvents{
+    /* border: black solid 2px; */
+    width: 30%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.updatesEvents span{
+    font-size: 80px;
+    font-weight: 200;
+    background: linear-gradient(90deg, rgba(194,79,79,1) 0%, rgba(182,128,26,1) 35%, rgba(8,147,176,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    text-shadow: #00000070 -2px -2px;
+}
+
+/* /////////////////////-  CONTACT CSS  -\\\\\\\\\\\\\\\\\\\\ */
+
+#contact{
+    background: url("../images/MatES\ logo.png" ) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact{
+    height: 100vh;
+    background: rgb(0 0 0 / 77%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDetails{
+    display: grid;
+    justify-items: center;
+}
+
+.contact span{
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: 600;
+    color: #dc6500e3;
+    text-shadow: #040200 -2px -2px;
+    text-transform: uppercase;
+}
+
+.contact button{
+       /* font: icon; */
+       /* letter-spacing: 2px; */
+       font-family: "Roboto";
+        font-weight: 800;
+       font-size: 37px;
+       background: #ff8c00;
+       border: solid 0px 0px;
+       margin-top: 20px;
+       width: 350px;
+       height: 65px;
+       border-radius: 40px;
+       text-transform: uppercase;     
+}
+
+.contact button a { 
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* ///////////////////-  footer  -\\\\\\\\\\\\\\\\\ */
+
+#footer{
+    background: rgb(32 33 37 / 98%);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    /* border: green 2px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;   
+}
+
+.address{
+    display: inline;
+    justify-content: center;
+}
+.address h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.address span{
+    display: flex;
+}
+
+.address span h6{
+    color: #f3ad2f;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.contacts{
+    display: inline;
+    justify-content: center;
+}
+.contacts h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.contacts div{
+    display: grid;
+}
+.contacts div a{
+    text-decoration: none;
+    color: #f3ad2f;
+    font-size: 15px;
+}
+
+.contacts div span{
+    text-decoration: none;
+    color: #f3ad2f;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contacts div a span{
+    margin-left: 10px;
+}
+
+.contacts div span span{
+    margin-left: 10px;
+}
+
+.quickLinks{
+    display: inline;
+    justify-content: center;
+}
+.quickLinks h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.quickLinks ul{
+ 
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a{
+  text-decoration: none;
+  color: #f3ad2f;
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 5px;
+
+}
+.social{
+    display: inline;
+    justify-content: center;
+}
+.social h3{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #f38c0ed1;
+    text-shadow: -2px -2px black;
+}
+
+.social a {
+    text-decoration: none;
+    margin-top: 15px;
+
+}
+
+.social a i {
+    color: #f3ad2f;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+/* ////////////////////- ANIMATIONS -\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 @keyframes colorchangethapa {
     0% {
